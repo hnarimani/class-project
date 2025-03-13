@@ -1,0 +1,19 @@
+.super-market-section-container{
+    width: 100%;
+    height: 110px;
+    background-color: lavenderblush;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    .super-market-section-all{
+        width: 100%;
+        max-width: 1330px;
+        height: 100%;
+        background-color: #EBEEED;
+        border-radius: 16px;
+        display: flex;
+        background-image: url(../svg/fresh.svg);
+        background-repeat: no-repeat;
+        position: relative;
+    }
+}

@@ -75,3 +75,43 @@ footer{
     }
   }
 }
+.position-fixed-left{
+    width: 135px;
+    height: 53px;
+    background-color: #029a49;
+    z-index: 4;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 16px;
+    bottom: 32px;
+    border-radius: 28px;
+    gap: 8px;
+    .position-fixed-left-text{
+        font-size: 15px;
+        font-family: Dg medium;
+        font-weight: 700;
+        line-height: 2.15;
+        color: #fff;
+    }
+    .position-fixed-left-svg{
+        width: 22px;
+        height: 22px;
+    }
+}
+.position-fixed-right{
+    width: 48px;
+    height: 48px;
+    z-index: 1;
+    position: fixed;
+    right: 50px;
+    bottom: 32px;
+    background-color: #ef4056;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2.5rem;
+    padding: 12px;
+}
