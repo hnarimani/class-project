@@ -1,0 +1,20 @@
+.ad-banner-two-first, .ad-banner-two-second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 16px;
+}
+.ad-banner-two-first-item-two img,
+.ad-banner-two-first-item-one img, 
+.ad-banner-two-second-item-two img,
+.ad-banner-two-second-item-one img
+
+{
+    display: flex;
+    justify-content: center;
+    width: 660px;
+    height: 264px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}

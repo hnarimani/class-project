@@ -1,0 +1,36 @@
+.ad-banner-foursome-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    .ad-banner-foursome-first-item-four img, 
+    .ad-banner-foursome-first-item-three img,
+    .ad-banner-foursome-first-item-two img,
+    .ad-banner-foursome-first-item-one img
+    {
+        display: flex;
+        justify-content: center;
+        width: 322px;
+        height: 241.5px;
+        border-radius: 16px;
+        margin-bottom: 16px;
+    }
+}
+.ad-banner-foursome-second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    .ad-banner-foursome-second-item-four img, 
+    .ad-banner-foursome-second-item-three img,
+    .ad-banner-foursome-second-item-two img,
+    .ad-banner-foursome-second-item-one img
+    {
+        display: flex;
+        justify-content: center;
+        width: 322px;
+        height: 241.5px;
+        border-radius: 16px;
+        margin-bottom: 16px;
+    }
+}
