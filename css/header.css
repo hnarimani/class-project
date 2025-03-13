@@ -21,6 +21,11 @@
   font-family: Dg bold;
   src: url(../font/iranyekanwebextrabold.woff);
 }
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 9999;  
+}
 .header-ad-banner {
   width: 100%;
   height: 60px;
@@ -41,9 +46,6 @@
   height: 68px;
   display: flex;
   background-color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 9999;
   .header-central-container {
     display: flex;
     width: 100%;
