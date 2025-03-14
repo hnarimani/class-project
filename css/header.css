@@ -1,26 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-@font-face {
-  font-family: Dg medium;
-  src: url(../font/iranyekanwebmedium.2d4f96e5.woff);
-  src: url(../font/iranyekanwebmedium.2d4f96e5.woff2);
-  src: url(../font/iranyekanwebmedium.2d4f96e5.ttf);
-  src: url(../font/iranyekanwebmedium.2d4f96e5.otf);
-}
-@font-face {
-  font-family: Dg regular;
-  src: url(../font/IRANYekanWeb.woff);
-  src: url(../font/IRANYekanWeb.woff2);
-  src: url(../font/IRANYekanWeb.ttf);
-  src: url(../font/IRANYekanWeb.eot);
-}
-@font-face {
-  font-family: Dg bold;
-  src: url(../font/iranyekanwebextrabold.woff);
-}
 .header{
   position: sticky;
   top: 0;
@@ -74,6 +51,7 @@
         height: 44px;
         padding-right: 50px;
         background-color: #f0f0f1;
+        position: relative;
         &::placeholder {
           font-family: Dg medium;
           font-size: 12px;
@@ -208,4 +186,15 @@
     }
   }
  }
+}
+.header-search-svg{
+  position: absolute;
+  right: 240px;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+  cursor: pointer;
+}
+.dastebandi-svg{
+  margin-top: 4px;
 }

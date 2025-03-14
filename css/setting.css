@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  @font-face {
+    font-family: Dg medium;
+    src: url(../font/iranyekanwebmedium.2d4f96e5.woff);
+    src: url(../font/iranyekanwebmedium.2d4f96e5.woff2);
+    src: url(../font/iranyekanwebmedium.2d4f96e5.ttf);
+    src: url(../font/iranyekanwebmedium.2d4f96e5.otf);
+  }
+  @font-face {
+    font-family: Dg regular;
+    src: url(../font/IRANYekanWeb.woff);
+    src: url(../font/IRANYekanWeb.woff2);
+    src: url(../font/IRANYekanWeb.ttf);
+    src: url(../font/IRANYekanWeb.eot);
+  }
+  @font-face {
+    font-family: Dg bold;
+    src: url(../font/iranyekanwebextrabold.woff);
+  }

@@ -1,7 +1,6 @@
 .super-market-section-container{
     width: 100%;
     height: 110px;
-    background-color: lavenderblush;
     margin-bottom: 16px;
     display: flex;
     justify-content: center;
@@ -12,8 +11,99 @@
         background-color: #EBEEED;
         border-radius: 16px;
         display: flex;
+        align-items: center;
         background-image: url(../svg/fresh.svg);
         background-repeat: no-repeat;
         position: relative;
+        justify-content: space-between;
+        .super-market-right-all{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        
+                .super-market-icon-img{
+                    width: 66px;
+                    height: 62px;
+                    margin: 0 40px 0 10px;
+                }
+                .super-market-text-img{
+                    width: 250px;
+                    height: 28px;
+                }
+                .super-market-tag{
+                    font-family: Dg medium;
+                    font-size: 14px;
+                    font-weight: 800;
+                    background-color: #029a49;
+                    color: #fff;
+                    padding: 5px 13px;
+                    border-radius: 10rem;
+                    margin: 0 0 0 15px;
+                }
+        }
+        .super-market-images-container{
+            display: inline-flex;
+            gap: 8px;
+            align-items: center;
+            .super-market-position-absolute-tag{
+                font-family: Dg medium;
+                font-size: 12px;
+                font-weight: 600;
+                background-color: #d32f2f;
+                color: #fff;
+                width: 34px;
+                height: 20px;
+                position: absolute;
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                bottom: 18px;
+            }
+            .super-market-items{
+                width: 74px;
+                height: 74px;
+                border-radius: 50%;
+                border: 8px white solid;
+            }
+        }
+        .super-market-show-all-button{
+            display: inline-flex;
+            gap: 8px;
+            background-color: #fff;
+            padding: 12px 20px;
+            height: 50px;
+            align-items: center;
+            margin: 0 0 0 42px;
+            border-radius: 100px;
+            .super-market-button-text{
+                font-family: Dg medium;
+                font-size: 12px;
+                font-weight: 400;   
+                color: #029a49;         
+            }
+            .super-market-button-svg{
+                width: 20px;
+                height: 20px;
+            }
+        }
     }
+}
+.tag-one{
+    left: 645px;
+}
+.tag-two{
+    left: 560px;
+}
+.tag-three{
+    left: 480px;
+}
+.tag-four{
+    left: 400px;
+}
+.tag-five{
+    left: 320px;
+}
+.tag-six{
+    left: 240px;
 }
