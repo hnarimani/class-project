@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>فروشگاه اینترنتی دیجی‌کالا</title>
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
+    <style>
+      a:link{
+        text-decoration: none;
+        cursor: pointer;
+      }
+      </style>
+<body>
+    <div class="login-all-container">
+        <div class="digikala-logo-container">
+            <img src="./svg/login/لوگوی دیجیکالا.svg" alt="" class="digikala-login-img-top">
+        </div>
+        <div class="login-title">
+            <p class="login-p">
+                ورود | ثبت‌نام
+            </p>
+            </div>
+            <p class="login-hi">
+                سلام!
+            </p>
+            <p class="login-enter">
+                لطفا شماره موبایل یا ایمیل خود را وارد کنید
+            </p>
+            
+
+            <input type="text" id="login-input-field" class="login-input" placeholder="شماره موبایل یا ایمیل">
+            <div class="login-error" id="login-error-text">لطفا شماره موبایل یا ایمیل معتبر وارد کنید</div>
+            <button class="login-btn" id="login-submit-btn" disabled>ورود</button>
+
+            <p class="login-terms">
+                ورود شما به معنای پذیرش 
+                <a href="#" class="login-blue">شرایط دیجی‌کالا</a> و 
+                <a href="#" class="login-blue">قوانین حریم‌خصوصی</a> است.
+            </p>
+    
+    </div>
+
+    <script>
+        const loginInputField = document.getElementById("login-input-field");
+        const loginErrorText = document.getElementById("login-error-text");
+        const loginSubmitBtn = document.getElementById("login-submit-btn");
+
+        function validateInput(value) {
+            const phonePattern = /^09[0-9]{9}$/;
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; 
+            return phonePattern.test(value) || emailPattern.test(value);
+        }
+
+        loginInputField.addEventListener("input", function() {
+            const value = loginInputField.value.trim();
+            if (validateInput(value)) {
+                loginErrorText.style.display = "none";
+                loginSubmitBtn.disabled = false;
+            } else {
+                loginErrorText.style.display = "block";
+                loginSubmitBtn.disabled = true;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -177,6 +177,7 @@
             display: flex;
             align-items: center;
             text-decoration: none;
+            cursor: pointer;
             color: #3F4064;
             font-family:  Dg medium, sans-serif;
             font-size: 14px;
@@ -197,4 +198,137 @@
 }
 .dastebandi-svg{
   margin-top: 4px;
+}
+      .nav-one{
+        position: relative;
+        
+        &:hover .header-open-menu{
+          display: block;
+          width: 78vw;
+          height: 70vh;
+        }
+      }
+            .header-open-menu{
+              width: 78vw;
+              height: 70vh;
+              position: absolute;
+              right: 0;
+              top: 40px;
+              transition: 500ms;
+              display: none;
+              .header-menu-category-right{
+                width: 18%;
+                height: 100%;
+                border-left: 1px solid #d0d0d0;
+                overflow: auto;
+                direction: ltr;
+                  .header-menu-category-item{
+                    width: 100%;
+                    height: 47px;
+                    background-color: #edeff2;
+                    
+                    .header-menu-category-item-sub{
+                      width: 82%;
+                      height: 100%;
+                      background-color: white;
+                      position: absolute;
+                      left: 0;
+                      top: 0;
+                      padding: 15px;
+                      display: none;
+                      transition: 600ms;
+                      overflow: auto;
+                      .sub-contents-see-all{
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        color: #008eb2;
+                        font-family: Dg medium;
+                        font-size: 11px;
+                        margin-bottom: 20px;
+                        .sub-contents-see-all-svg{
+                          margin-top: 2px;
+                          width: 20px;
+                          height: 20px;
+                        }
+                      }
+                    }
+                    .header-menu-category-item-link{
+                      display: flex;
+                      align-items: center;
+                      justify-content: flex-end;
+                      width: 100%;
+                      height: 100%;
+                      text-decoration: none;
+                      .header-menu-category-item-icon{
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 10px;
+                      }
+                      .header-menu-category-item-title{
+                        font-family: Dg medium;
+                        font-weight: 700;
+                        color: #3f4064;
+                        font-size: 12px;
+                        margin-right: 7px;
+                      }
+                    }
+                    &:hover{
+                      background-color: #fff;
+                      transition: 300ms;
+                    }
+                    &:hover .header-menu-category-item-sub{
+                      display: block;
+                      transition: 600ms;
+                    }
+                    &:hover .header-menu-category-item-title{
+                     color: #ED1A44;
+                     transition: 300ms;
+                    }
+                    .sub-active{
+                      display: block !important;
+                    }
+                  }
+                }
+              }
+.category-item-sub-contents-title{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+  .sub-content-red-title{
+    color: #ED1A44;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: Dg medium;
+  }
+  .sub-contents-arrow-svg{
+    width: 20px;
+    height: 20px;
+  }
+  .sub-contents-title-text{
+    margin-right: 5px;
+    font-size: 14px;
+    font-family: Dg medium;
+    font-weight: 900;
+    color: black;
+    &:hover{
+      color: #ED1A44;
+    }
+  }
+}
+.category-item-sub-contents-s-text{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 12px;
+  .sub-contents-s-text{
+    margin-right: 5px;
+    font-size: 12px;
+    font-family: Dg medium;
+    color: #81858b;
+    &:hover{
+      color: #ED1A44;
+    }
+  }
 }
